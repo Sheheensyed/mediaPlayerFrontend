@@ -1,0 +1,739 @@
+                                                    Module - 2
+                                                -----------------
+
+ JavaScript
+ -------------
+
+- java script can be used in both frontend as well as backend
+- frontend - behaviour to a web application
+- backend - logical operations
+- browser understanding language  -js, html, css
+- node js - environment - to run js outside the browser.
+- JavaScript is a single thread programming language - line by line execution
+- dynamically typed language -
+- both procuderal and oops paradigm are support
+
+
+procuderal programming : its a programming paradigm in which both data and function are considered as two different entity
+- more focused on sequential execution of statement
+
+
+syntax create a file - (filename.js)
+
+run a file
+-----------
+
+- node filename.js
+
+display a content
+------------------
+
+console.log(content)
+
+
+DataType
+----------
+Primitive DataType : basic dataType
+    1) string : value should be inside single quote or double quotes
+    2) number
+    3) boolean : true or false
+    4) undefined : varibale which is declared but not assigned a value
+    5) null : intentional absence of value
+    6) BigInt : large numbers eg: 2^56
+    7) symbols : represent a unique identify
+
+
+NON Primitive DataType : combination of prirmitive dataType
+    8) object
+        {key:value}
+
+variables
+--------------
+- used to store data at a time
+- 
+
+- rules to create variables - identifiers
+    1) it can starts with letters(a-z,A-Z),dollar symbol($), underscore(_),  prefer(letter)
+    2)  variable name should not start with digit but the subsequent character can be a digit
+    3) if there is more than one word in a variable name 
+        - they can be seperated by underscore or 
+        - the subsequent words should starts with capital letter(camel case)
+
+        car_name, carname, carname
+
+        - there should not be space between the varibale names eg: car name
+
+syntax to declare a variable
+-------
+
+    1) variablename = value
+    2) keyword variable name = value
+
+keywords
+--------
+- keywords are set of resserved word which provide special meaning to a variable
+- these keywords cannot be used for any other purpose.
+
+const - no re-assigning possible
+let - reassigning is possible , hoisting is not possible, block level scope
+var - reassigning possible, hoisting is possible
+
+variable hoisting
+------------------
+
+defining a variable before it is declare
+
+concatenation
+---------------
+ addition of different dataType
+
+ string + number = string
+ number + number = number
+ string + string = string
+
+Template literals
+-------------------
+- way of displaying contents.
+
+syntax
+------
+`content $(variablename)`
+
+Operators
+----------
+ 1) assignment (=)
+ 2) Arithmetic operator
+    - addition(+)
+    - substraction(-)
+    - multiplication(*)
+    - division(/)
+    - exponential(**)
+    - remainder(%)
+
+3) Relational operator
+    - less than <
+    - less than or equal to <=
+    - greater than >
+    - greater than or equal to >=
+    - double equal to ==(check value only)
+    - triple equal to ===(check value as well as dataType)
+    - not equal to !=
+
+4) Logical operator
+    - return boolean value
+    - can be used between Relational operator
+
+    AND (&&)
+    - T & T = true
+    - T & F = false
+    - F & T = false
+    - F & F = false
+    
+    OR (||)
+    - T || T = true
+    - F || T = true
+    - T || F = true
+    - F || F = false
+    
+    NOT (!)
+    - !T = false
+    - !F =  true
+
+5) increment(++) / decrement(--)
+
+6) shorthand operator
+    x= x+10 = > x+=10
+    x= x-10 = > x-=10
+7) ternary operator 
+    condition?true:false
+8) truthy
+        condition && true
+
+conditional statement / decison making statements
+--------------------------------------------------
+if else statement 0
+syntax
+-------
+if(condition){
+    statements
+}
+else if(condition){
+    statement
+}
+else{
+    statement
+}
+
+loop
+-----
+to do a task repeatedly at a particular position
+
+types of looping statements
+-----------------------------
+
+    -while loop
+    ------------
+    syntax:-
+    
+    variable initialisation
+    while(condition){
+        statement/task
+        loop exit condition/inc/dec operator
+    }
+
+
+
+    -num%10 = 15%10 = 5
+    -Math.floor - to remove decimal point
+
+
+    for loop
+    ----------
+    syntax:-
+
+    for(variable initialisation, condition, inc/dec){
+        statement
+    }
+
+factorial
+-----------
+
+break:- in order to forcefully break a loop
+
+
+nested loop - loop inside another loop
+-------------
+
+- pattern
+
+
+
+
+
+
+
+function
+-----------
+ - to do a task repeatedly at different location of the programming file
+ - it helps to reduce number of codes in the programming file.
+ - two parts
+
+    1) function definition
+        - where the task is defined
+        - syntax
+        --------------
+        function functionname(){
+             statement/task
+          }
+
+    2) function call
+        - inorder to execute task in the function definition
+        - syntax
+        -----------
+        functionname(arg1....argn)
+
+        Arguments or parameters : value accessing outside the function
+                  : optional
+
+
+        - variables inside a function is having block level/functional scope ie:- it cannot be accessed outside the function
+        - inorder to access the variable outside the function we need to use return statement
+        - statements after the return statement will not execute. hence return statement should be placed as the last statement of the function. 
+
+
+
+
+
+
+Arrow function
+-------------------
+    - ES6 - arrow function is preferred
+
+function definition
+---------------------
+keyword(let,var,const) variablename=()=>{statement} (curly bracket is not mandatory)
+
+function call
+variablename()
+
+
+function hoisting
+-------------------
+    - function call before function definition
+    - regular/normal function - hoisting is possible
+    - arrow function - hoisting is not possible
+
+
+category of functions
+-------------------------
+ - 1) predefined function / builtin function
+        - eg:- console.log, Math.floor,Math.ceil,Math.random, eval , typeof, etc..
+ - 2) call back function
+        - a function calling another function
+ - 3) nested function
+        - a function definition inside another function
+        - closure property
+ - 4) synchronous function
+        - function which does not have time delay
+ - 5) asynchronous function
+        - function which have time delay
+        - eg:- setTimeout(), api call
+
+DATASTRUCTURE
+---------------
+ - a specialized format for organizing,processing,retreaving and storing data
+    eg:- stack, queue, linkedlist, list, array
+
+    array
+    ------
+     - unlike variables array is a single variable which can store more than one data of different data types, where each items in an array is seperated by commas and enclosed within square brackets[],
+
+     variablename=[item1, item2, item3 ....... itemn]
+
+     - key:value
+     - index positions - starts from 0 and - ends in length-1
+     - value - item
+     - length - total number of items in an array(total number of memory location)
+     - array in js is infinite(does not need to specify the length of an array)
+
+    array operations
+    ------------------
+    1) push() - to add an item to an array as the last element
+    2) unshift() - element to insert at the start of an array
+    3) pop() - to remove an item from the end of an array
+    4) shift() - to remove the first item from the array
+    5) sort() - to arrange elements in an array in ascending or descending order
+    6) flat() - used to change th dimension of an array
+    6) flat(depth) - used to change th dimension of an array
+            - depth - 
+            - infinity - directly changes to 1 dimensionnal
+    7) foreach() - used to access each items from a given array(for loop)
+    8) map() - it access each items from the given array and returns a new array having the same number of elements
+    9) reduce() - it returns a single value from the given array - eg: sum,highest,lowest,average
+    10) filter() - create a new array with elements satisfying a particular condition
+    11) some() - returns boolean value based on condition
+    12) find() - returns the first item satisfying the condition
+    13) include() - return boolean value based on items in array
+    14) indexOf(item) - return index value of the item
+    15) lastIndexOf() - return the last index of the item
+    16) splice(startindex,deletcount,additem) - to add and remove items at any point in a given array
+    17) slice(start,endindex) - returns selected number of items from a given array - end index will be excluded - return new array - accepts negative values
+    18) reduceRight() - 
+    19) spread() - to merge two arrays
+    
+
+
+    different way to acces array items
+    ---------------------------------------
+    - 1) regular for loop
+    - 2) in method - returns index value of an array
+    - 3) of method - return directly the value of an array
+
+    linear approach
+    ---------------
+
+    - checks/compare each element of an array
+    - time consuming
+    - small arrays
+    - can be applied in any type of array
+
+    Binary approach
+    ----------------
+
+    - will not checks/compare every element in an array
+    - it is not time consuming compared to linear approach
+    - used in large dataset/array
+    - can be used only in sorted array (arranged in ascending order)
+
+
+Algorithm - step by step procedure to solve a given problem
+          - visual representation(flow chart)
+
+
+
+    algo steps:-  // algorithm
+// 1) arrange the given array in ascending order
+// 2) set the low and up value as 0 and array.length-1(last index) respectively
+// 3) find the mid value by using the following formula
+//     mid=Math.floor(low+ip/2) - use Math.floor to remove decimal PointerEvent
+// 4) mid value can be either
+//     1) equal
+//         - print the given number is present in the array
+//     2) else if - less
+//         - change the value to mid-1
+//     3) else - greater
+//         - change the low value ro mid+1
+// 5) repeat the step 3 and 4 untill the low and up meet
+
+
+nested array
+------------
+- array inside another array
+
+String
+-------
+String : sequence of characters stored in different memory location
+
+    String methods
+    --------------
+    1) toUpperCase() - convert into capital letter
+    2) toLowerCase() - convert into small letters
+    3) startsWith() - check whether a given string starts with a particular characters - returns boolean value - case sensitive
+    4) endsWith() - check whether a given string starts with a particular characters - returns boolean value - case sensitive
+    5) substring(startindex,endindex) - to create a new string from the given string - endindex is excluded - no negative value will accept
+    6) slice() - to create a new string from the given string - endindex is excluded - negative value accepts
+    7) trim() - remove white space at the strat and end of the given string 
+    8) split(seperator) - split the given string based on the seperator - returns new array
+    9) Array.from() - return a new array with individual characters as the element
+    10) replace(search_value,replace_value) - it replaces the first matching character
+    11) replaceAll() - to replace all the matching words/characters
+
+
+Object
+-------
+ - unlike array it can store more than one data with higher clarity.
+
+        Definition:- object is a single variable which can store more than one data of different dataType as key:value pairs that are seperated by commas and enclosed within curly bracket
+    
+    syntax
+    ------
+    variablename = {
+        key1:value1,
+        key2:value2,
+        keyN:valueN
+    }
+
+    get data
+        - objectname['key'] - if key is a variable and also there is exact key
+        - objectname.key - exact key
+        - in operator
+
+    add data
+        - objectname[key] = value
+
+    update Data
+        - objectname[key] = value
+
+    delete Data
+        - delete objectname.key
+
+
+object oriented programming system - oops
+---------------------------------------------
+ - its a modern paradigm(style) which consider real time time entity into object and class
+ - here both data(properties) and function(method) are considered as a single entity is called class
+
+ - properties - variable
+ - method - function
+
+class : Blue print which contains common feature based on which an object is created
+object : are the real time entity that is created based on the class
+reference : memory location where the properties and methods are stored
+
+syntax to create a class
+-------------------------
+class className{
+    // properties
+    // constructor - used to initialise the value of properties
+    // methods
+}
+- properties, methods and constructors are not always present inside a class .(optional)
+
+syntax of constructor
+----------------------
+constructor(arg){}
+- predefined method which self invoke when a instance for a class is create
+- if constructor is accepting Argument. value have to be passed using class
+
+instance variable (this.propertyname) - access properties or methods inside a class
+
+methods : is a function - to do a task
+
+method syntax
+--------------
+methodname(){}
+
+syntax to create object
+------------------------
+const objectname = new classname()
+
+PILLARS OF OOPS
+----------------
+
+1) Inheritance
+2) polymorphism
+3) encapsulation
+4) abstraction
+
+Inheritance
+------------
+- used to access properties and method of one class to another class
+- increases reusability
+- keyword - extends
+- PARENT Class - from where the properties and methods are accessed
+               - super class/base class
+- child class - the class which access the properties and method
+              - sub class/derived class
+
+    Object Inheritance
+    -------------------
+    keyword - __proto__
+
+    multilevel inheritance - access methods and properties indirectly from parent classes
+     
+ polymorphism
+ -------------
+ poly - many
+ morphism - forms
+
+    - method overloading
+    -----------------------
+        -> methods with same name but different arguments
+        -> it executes based on the number of arguments
+        -> javaScript does not support method overloading
+        -> spread operator(...) - returns array of arguments
+
+    - method overriding
+    --------------------
+        -> methods with same name and same number of arguments
+        -> execute the last written method.
+        -> JS support this concept
+
+ encapsulation
+ --------------
+
+ abstraction
+ ------------
+
+
+ Exception Handling
+ ---------------
+ Exception : run time error
+
+ try-catch block
+ syntax
+ ---------
+ try{
+    statements - whose statements which might commit error
+ }
+
+ catch{
+    statement to resolve the error
+ }
+
+ finally{
+    - statements which need to be executed in both classes
+    - optional block
+ }
+
+
+
+JavaScript - frontend
+-----------------------
+
+    Browser
+    --------
+    - Application which provides a interface to communicate with the resources available in the internet.
+    eg:
+
+
+    - DOM - Document object Model
+    --------------------------------
+    - tree structure of html document
+    - created by browser
+
+    - binding js with html
+    ----------------------
+    - 1) internal js
+        - <script>code</script>
+    - 2) External js
+        - create a External file with extension as .js
+        - <script src "path"></script>
+
+- how to access html elements
+------------------------------
+1) document.getElementsBytagname(tagname) - returns html collection
+2) document.getElementsByClassname(className) - returns html collection
+3) document.getElementById(id) - returns directly the element
+4) querySelector(tagname/#id/.class) - returns the first matching element
+5) document.querySelectorAll() - returns all matching elements as array(nodelist)
+
+- how to update content in a html element
+-------------------------------------------
+    - .innerHTML/.innerText
+    - .style
+
+- Events
+---------
+ - Actions performed by the user leads to a change in dom structure
+    eg: click
+        change
+        keydown
+        submit
+        load
+
+- Date class can be used to fetch current date and time from the system
+
+DATABASE : used to store data
+    -Data is stored as key:value pairs - where key must be string
+    - huge amount of data
+    - permanent storage
+
+ - Browser storage
+ ------------------
+    - to store data within the browser
+    - limited amount of data
+    - there are different types of Browser storage
+    - key:value pairs - where key must be string
+
+        eg: - local storage 
+                - stored as key:value pairs
+                - limited storage
+                - permanent storage
+
+
+            - session storage
+                - stored as key:value pairs
+                - limited amount data can be stored
+                - temporary storage.
+
+Local storage - operations
+---------------------------
+ - add data/update data - localStorage.setItem("key",value)
+ - get data - localStorage.getItem("key")
+ - delete data - localStorage.removeItem("key")
+
+ json.stringify - to convert to string
+ json.parse - to convert into object
+
+ API
+ ----
+  - Application programming interface
+  - Used to communicate between two applications available in the internet.
+
+types of API - based on scopes
+------------------------------
+ 1) public api :- publically accessible
+ 2) private api - single firm
+ 3) partner api - more than one company - authorization required
+ 4) composite api - 
+
+ api architecture
+ ----------------
+ 1) restful api -
+ 2) soap api -
+ 3) rpc api -
+
+ refer : SAOP,RPC
+
+ RESTFUL API ARCHITECTURE
+ -------------------------
+
+ refer :- https,ftp,udp,smtp etc...
+
+ HTTP
+ -----
+  - Hyper text transfer protocol
+  - set of rules to be followed while communicating via internet
+        1) http request
+        ---------------
+            1) POST request - to send data
+            2) GET - to retrieve data
+            3) PUT - to update data
+            4) DELETE - to remove data
+
+    
+    json
+    -----
+    - javaScript object notation
+    - is a common format to communicate between the two application .
+    - format
+        {
+            key:value - where both key and value must be string
+        }
+
+        request have two parts
+            1) head - type of data, authorization
+            2) body - data is placed in the request body.
+
+        response series
+        ---------------
+        1) 1xx series - information
+        2) 2xx series - success response
+        3) 3xx series - redirection
+        4) 4xx series - client side error
+        5) 5xx series - server side error
+
+    URL - uniform resource locator
+        - address to resource in internet.
+
+    
+    Api testing tools
+    ------------------
+    1) Thunder client - vs code
+    2) Postman - real tool
+
+    Different techniques to create api
+    ----------------------------------
+     1) AJAX
+     2) FETCh
+     3) async - await
+
+     AJAX
+     ----
+      - ASYNCHRONOUS JavaScript XML
+      - xmlhttprequest()class - predefined
+      - open() - connect with the application
+      - sent() - used to send the request
+      - readyState - property inside the class
+                   - its value changes from 1-4 - onreadyStateChange()
+                   - when the readyState value reaches 4 we will recieve response
+      - responseText - response is  recieved in this property
+
+      username,email,address-street,phone number,company name
+
+      Fetch
+      ------
+      - promise() - class
+            - three phase / state
+                1) resolve - .then()
+                2) pending - 
+                3) reject - .catch()
+
+
+async - await
+--------------
+ - can store the data in a variable
+ - single then()
+ - promise
+
+    async - function inside which the api call is done
+    await - api call
+
+How javaScript handles both synchronous and asynchronous functions together
+----------------------------------------------------------------------------
+
+
+
+
+Axios
+-----
+ - a technical to create http client request (api calls)
+ - based on promise
+ - usage
+   ------
+    1) install axios - command : npm install axios
+    2) import
+    3) axios(config)
+      config = {
+        method:http request - get,put,post, delete,
+        url: path to serverside,
+        data:share data,
+        headers:content-types of data
+      }
+
+      content-type : 1) application/json - input field
+                     2) multipart/form-data - uploaded content
+    - axios will convert object into json.
+
+    
