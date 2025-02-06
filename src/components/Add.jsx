@@ -38,7 +38,6 @@ function Add({setAddStatus}) {
     if (!caption || !imgurl || !embedLink) {
       toast.info('Please fill the form completely');
     } else {
-      let link;
       if (embedLink.startsWith('http://youtu.be/')) {
         // https://youtu.be/9ZMWM9a-v0A?si=y1GDKLNsd8PER6ac
         link = `https://www.youtube.com/embed/${embedLink.slice(17, 28)}`;
